@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<title>Kiln Scans</title>
+</head>
+<body class="d-flex ">
+
+<div class="container d-flex flex-column">
+    <h1>Kiln Scanning</h1>
+    <p class="lead">Some cool scans of a Minnesota kiln complex.</p>
+
+    <hr class="mt-1">
+
+    <div class="d-flex flex-column">
+        <h4>Richard's Kiln</h4>
+        <p>
+            A three-section operation.
+        </p>
+        <!-- rotation-per-second=".1rad"
+        auto-rotate
+        touch-action="pan-y"
+        auto-rotate-delay="1000" -->
+        <model-viewer src="assets/3D/kiln_01.glb" 
+                    shadow-intensity="2" 
+                    camera-orbit="45deg 70deg 100%"
+                    class="model3d"
+                    camera-controls
+                    touch-action="pan-y"
+                    interaction-prompt-style="wiggle"
+                    class="model3d">
+    </div>
+
+    <hr>
+    
+    <div class="d-flex flex-column">
+        <h4>Outter Kiln Context</h4>
+        <p>
+            What's going on around the kiln.
+        </p>
+
+        <model-viewer src="assets/3D/kiln_02.glb" 
+                    shadow-intensity="2" 
+                    camera-orbit="45deg 70deg 100%"
+                    class="model3d"
+                    camera-controls
+                    touch-action="pan-y"
+                    interaction-prompt-style="wiggle"
+                    class="model3d">
+    </div>
+
+    <!-- <hr>
+
+    <div class="d-flex flex-column">
+        <h4>Richard's Kiln</h4>
+        <p>
+            A three section kiln ready to fire in Minnisota.
+        </p>
+        <h6>subtitle</h6>
+
+        <model-viewer src="assets/3D/kiln_01.glb" 
+                    shadow-intensity="2" 
+                    camera-orbit="45deg 70deg 100%"
+                    class="model3d"
+                    camera-controls
+                    touch-action="pan-y"
+                    interaction-prompt-style="basic"
+                    class="model3d">
+    </div> -->
+
+</div>
+
+<footer>
+
+</footer>
+
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
